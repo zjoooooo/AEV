@@ -80,7 +80,6 @@ namespace AEV
                     LogClass.WriteLog("Fail To Get Car Park List!");
                     continue;
                 }
-                //Test upload
                 //Randomly choose shift start time by 10 mins buffer.
                 shiftStartTime = Tools.ShiftStartTime(startdate, ShiftTime);
                 LogClass.WriteLog($"Shift {i} starttime = {shiftStartTime}");
@@ -105,7 +104,6 @@ namespace AEV
                     InsertTransaction(carpark, IP, entrytimeofmc, scanningNumber, i);
                 }
             }
-            //Geng gai 
         }
         private void InsertTransaction(string carpark, string iP, string entrytimeofmc, int scanningNumber, int shift)
         {
@@ -324,6 +322,7 @@ namespace AEV
                 LogClass.WriteLog($"=========={str}==========");
                 MainMethod(str);
             }
+            //dhdhddhdh
         }
         private void button2_Click(object sender, EventArgs e)
         {
